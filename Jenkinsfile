@@ -8,7 +8,7 @@
 
 pipeline {
     agent {
-        docker {
+        dockerfile {
             additionalBuildArgs '--build-arg NAME=HAKKIM'
         }
     }
