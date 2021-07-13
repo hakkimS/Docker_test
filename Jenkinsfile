@@ -1,11 +1,9 @@
-/*node ("master"){
+node ("master"){
     docker.dockerfile(
         additionalBuildArgs:'--build-arg NAME=HAKKIM'
-    ).inside() {
-      sh "echo hakkim"
-    }
-}*/
-
+    ).withRun()
+}
+/*
 pipeline {
     agent {
         dockerfile {
@@ -21,3 +19,4 @@ pipeline {
     }
     }
 
+*/
