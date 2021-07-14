@@ -15,6 +15,12 @@ pipeline {
     agent {
         dockerfile {
             additionalBuildArgs '--build-arg NAME=HAKKIM'
+            
+        }
+    }
+    stages{
+        stage("commands"){
+            sh "echo $NAME"
         }
     }
   
