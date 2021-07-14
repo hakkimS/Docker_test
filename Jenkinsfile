@@ -9,14 +9,11 @@
     }
 }
 
-node ("master"){
-    docker.dockerfile(
-        additionalBuildArgs:'--build-arg NAME=HAKKIM'
-    ).withRun()
+
 }*/
 
 pipeline {
-    agent any
+    agent none
     stages {
         stage("co"){
     agent{
