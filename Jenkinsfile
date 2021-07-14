@@ -7,9 +7,9 @@
     customImage.inside {
         sh 'echo hello $NAME'
     }
-}*/
+}
 
-/*node ("master"){
+node ("master"){
     docker.dockerfile(
         additionalBuildArgs:'--build-arg NAME=HAKKIM'
     ).withRun()
