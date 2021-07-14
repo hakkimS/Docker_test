@@ -17,13 +17,7 @@ pipeline {
             additionalBuildArgs '--build-arg NAME=HAKKIM'
         }
     }
-    stages {
-        stage('Steps run inside docker here ...') {
-            steps {
-                sh "docker run"
-            }
-        }
-    }
+  
     }
 
 
