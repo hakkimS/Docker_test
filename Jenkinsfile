@@ -1,16 +1,19 @@
-/*node ("master"){
-    stage("docker build"){
-        sh "docker build ."
+node {
+    checkout scm
+
+    def customImage = docker.build("my-image:${env.BUILD_ID}")
+
+    customImage.inside {
+        sh 'make test'
     }
-    
-}*/
+}
 
 /*node ("master"){
     docker.dockerfile(
         additionalBuildArgs:'--build-arg NAME=HAKKIM'
     ).withRun()
 }*/
-
+/*
 pipeline {
     agent {
         dockerfile {
@@ -29,3 +32,4 @@ pipeline {
     }
 
 
+*/
