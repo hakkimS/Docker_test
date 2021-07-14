@@ -22,7 +22,7 @@ pipeline {
         }
     }
      steps{
-         echo "${NAME}"
+        sh 'echo hello $NAME'
             }
         }
     }
