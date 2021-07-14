@@ -20,7 +20,9 @@ pipeline {
     }
     stages{
         stage("commands"){
+            steps{
             sh "echo $NAME"
+            }
         }
     }
   
