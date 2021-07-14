@@ -1,4 +1,4 @@
-node {
+/*node {
     checkout scm
     
 
@@ -7,14 +7,14 @@ node {
     customImage.inside {
         sh 'echo hello $NAME'
     }
-}
+}*/
 
 /*node ("master"){
     docker.dockerfile(
         additionalBuildArgs:'--build-arg NAME=HAKKIM'
     ).withRun()
 }*/
-/*
+
 pipeline {
     agent {
         dockerfile {
@@ -28,5 +28,3 @@ pipeline {
   
     }
 
-
-*/
