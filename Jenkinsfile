@@ -1,3 +1,4 @@
+/*
 node {
     checkout scm
     
@@ -9,8 +10,7 @@ node {
     }
 }
 
-/*
-
+*/
 pipeline {
     agent none
      stages {
@@ -27,4 +27,3 @@ pipeline {
     }
     }
 
-*/
