@@ -14,14 +14,14 @@
 
 pipeline {
     agent none
-    stages {
+     stages {
         stage("co"){
-    agent{
+     agent{
         dockerfile {
             additionalBuildArgs '--build-arg NAME=HAKKIM'
         }
     }
-            steps{
+     steps{
             sh "echo $NAME"
             }
         }
